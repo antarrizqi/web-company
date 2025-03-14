@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script src="main.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class>
+    <!-- navbar -->
+    <nav class="bg-white border-gray-200 sticky">
+      <div
+        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-4 p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img src="image/CiptaWeb.png" class="h-8" alt="Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-white md:dark:bg-white dark:border-white"
+          >
+            <li>
+              <a
+                href="#kenapa-harus-kami"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-bla md:p-0 dark:to-black md:dark:hover:bg-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#E97C00] md:dark:hover:bg-transparent"
+                >Tentang Kami</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#carousel"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-bla md:p-0 dark:to-black md:dark:hover:bg-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#E97C00] md:dark:hover:bg-transparent"
+                >Portofolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#layanan"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-bla md:p-0 dark:to-black md:dark:hover:bg-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#E97C00] md:dark:hover:bg-transparent"
+                >Layanan</a
+              >
+            </li>
+            <li>
+              <a
+                href="konsultasi"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-bla md:p-0 dark:to-black md:dark:hover:bg-gray-400 dark:hover:bg-gray-700 dark:hover:text-[#E97C00] md:dark:hover:bg-transparent"
+                >Konsultasi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <section class="text-black body-font bg-[#FCB040]">
+      <div
+        class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
+        bis_skin_checked="1"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          bis_skin_checked="1"
+        >
+          <h1
+            class="title-font font-bold sm:text-4xl text-3xl mb-4 text-gray-900"
+          >
+            Butuh Website Untuk <br class="hidden lg:inline-block" />Keperluan
+            Anda?
+          </h1>
+          <p class="mb-5 leading-relaxed">
+            Jasa pembuatan website dan optimisasi branding perusahaan, Harga
+            Termurah Dan Meningkatkan jangkauan konsumen anda menjadi luas
+          </p>
+          <div class="list gap-y-5 mb-10">
+            <ul>
+              <li>
+                <span class="text-white font-bold mr-5">✓</span>Harga Pembuatan
+                Website Murah
+              </li>
+              <li>
+                <span class="text-white font-bold mr-5">✓</span>Mendongkrak
+                Peningkatan Sales
+              </li>
+              <li>
+                <span class="text-white font-bold mr-5">✓</span>Cepat Dan
+                Profesional
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center" bis_skin_checked="1">
+            <button
+              class="inline-flex text-white bg-[#E97C00] border-0 py-2 px-6 focus:outline-none hover:bg-black rounded text-lg"
+            >
+              Hubungi kami
+            </button>
+            <!-- <button
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+            >
+              Button
+            </button> -->
+          </div>
+        </div>
+        <div
+          class="lg:max-w-xl lg:w-full md:w-1/2 w-full animate-bounce"
+          bis_skin_checked="1"
+        >
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="image/web-illustration1.png"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- section kenapa harus kami? -->
+    <section class="kenapa-harus-kami?" id="kenapa-harus-kami">
+      <div
+        class="container flex mx-auto justify-evenly py-20 mb-10 mt-10 flex-col xl:flex-row sm:flex-row align-center"
+      >
+        <div
+          class="group max-w-sm p-6 h-71 rounded-sm shadow-2xl shadow-[#FBA33F] hover:bg-white"
+        >
+          <img src="image/web.svg" alt="" />
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-black group-hover:text-blue-950"
+          >
+            ALL IN ONE SERVICE
+          </h5>
+          <p class="mb-3 font-normal text-black group-hover:text-gray-500">
+            Kamu akan mendapatkan domain, hosting,copywriting, desain, dan SEO
+            Friendly. Berlaku juga untuk kamu yang ingin membuat e-commerce atau
+            toko online yang membutuhkan branding atau konten untuk instagram
+            kami siap untuk membuat konten secara analitis yang mendalam untuk
+            bisnis mu, yang sesuai dengan target market anda
+          </p>
+          <a href="#"> </a>
+          <a
+            href="#"
+            class="fade-link hidden items-center px-12 py-4 text-sm font-medium text-center text-white bg-[#FBA33F] rounded-lg mt-8 focus:ring-4 focus:outline-none focus:ring-blue-300 group-hover:inline-flex"
+          >
+            Selengkapnya
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="group max-w-sm p-6 h-71 rounded-sm shadow-2xl shadow-[#FBA33F] hover:bg-white"
+        >
+          <img src="image/license.svg" alt="" />
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-black group-hover:text-blue-950"
+          >
+            KONSULTASI DAN PELATIHAN
+          </h5>
+          <p class="mb-3 font-normal text-black group-hover:text-gray-500">
+            Tim aftersales kami akan memberikan free konsultasi dan vidio
+            pelatihan untuk penggunaan nya dan customer kami akan berkesempatan
+            masuk grup yang berisikan para pengusaha untuk mendapatkan update
+            dan membangun relasi baru
+          </p>
+          <a href="#"> </a>
+          <a
+            href="#"
+            class="fade-link hidden items-center px-12 py-4 text-sm font-medium text-center text-white bg-[#FBA33F] rounded-lg mt-8 focus:ring-4 focus:outline-none focus:ring-blue-300 group-hover:inline-flex"
+          >
+            Selengkapnya
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="group max-w-sm p-6 h-71 rounded-sm shadow-2xl shadow-[#FBA33F] hover:bg-white"
+        >
+          <img src="image/work.svg" alt="" />
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-black group-hover:text-blue-950"
+          >
+            TIM BERPENGALAMAN
+          </h5>
+          <p class="mb-3 font-normal text-black group-hover:text-gray-500">
+            tim kami terdiri dari tim profesional yang telah bertahun-tahun
+            menggeluti Dunia Teknologi Dan Digital, bayangkan jika tim
+            profesional kami berkolaborasi dan mendongkrak penjualan, dan value
+            bisnis anda
+          </p>
+          <a href="#"> </a>
+          <a
+            href="#"
+            class="fade-link hidden items-center px-12 py-4 text-sm font-medium text-center text-white bg-[#FBA33F] rounded-lg mt-8 focus:ring-4 focus:outline-none focus:ring-blue-300 group-hover:inline-flex"
+          >
+            Selengkapnya
+            <svg
+              class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimoni -->
+    <section class="bg-[#FBA33F] dark:bg-[#FBA33F]">
+      <div
+        class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+      >
+        <figure class="max-w-screen-md mx-auto">
+          <svg
+            class="h-12 mx-auto mb-3 text-black dark:text-black"
+            viewBox="0 0 24 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+              fill="currentColor"
+            />
+          </svg>
+          <blockquote>
+            <p class="text-2xl font-medium text-gray-900 dark:text-white">
+              "Saya sangat puas dengan layanan Ciptaweb! Sejak awal, tim mereka
+              sangat profesional dan responsif terhadap kebutuhan saya. Mereka
+              berhasil menciptakan website yang tidak hanya menarik secara
+              visual, tetapi juga sangat fungsional."
+            </p>
+          </blockquote>
+          <figcaption class="flex items-center justify-center mt-6 space-x-3">
+            <img
+              class="w-6 h-6 rounded-full"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+              alt="profile picture"
+            />
+            <div
+              class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
+            >
+              <div class="pr-3 font-medium text-gray-900 dark:text-white">
+                Tyler Musk
+              </div>
+              <div
+                class="pl-3 text-sm font-light text-gray-900 dark:text-gray-900"
+              >
+                CEO at Musk Company
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECTION CAROUSEL -->]
+
+    <section class="container max-h-min p-4 bg-white" id="carousel">
+      <h1 class="text-3xl font-bold text-center">Portofolio Kami</h1>
+      <p class="text-center text-gray-600">Portofolio website Kami.</p>
+
+      <div
+        id="indicators-carousel"
+        class="relative w-full"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div
+          class="relative mt-20 mb-20 h-56 overflow-hidden rounded-lg md:h-96 py-40"
+        >
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+              src="image/web1.png"
+              class="relative flex -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-min w-min min-h-min min-w-min"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="image/web2.png"
+              class="relative flex -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-min w-min min-h-min min-w-min"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="image/web3.png"
+              class="relative flex -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-min w-min min-h-min min-w-min"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="image/web4.png"
+              class="relative flex -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-min w-min min-h-min min-w-min"
+              alt="..."
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="image/web5.png"
+              class="relative flex w-96 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 5"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!-- bekerjasama dengan -->
+    <section class="">
+      <div class="flex items-center justify-center">
+        <h1 class="mb-4 text-2xl font-bold">Kita bekerjasama Dengan</h1>
+      </div>
+      <div
+        class="md:bg-[#f7f7f7] md:flex md:flex-row sm:flex-row justify-center items-center auto-rows-min"
+      >
+        <div
+          class="img1 rounded-md w-[30%] h-[40%] justify-center items-center flex"
+        >
+          <img
+            src="image/LOGO_STEMPEL_PT_PANDOYO_REV-removebg-preview.png"
+            alt=""
+          />
+        </div>N
+
+        <div class="img2 w-[30%] h-[40%]  mr-12 justify-center items-center">
+          <img src="image/Wordpress_Blue_logo.png" alt="" />
+        </div>
+        <div class="mb-5 w-[30%] h-[40%]  justify-center items-center">
+          <img src="image/WhatsApp.svg.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- layanan kami -->
+    <section class="bg-[#FCB040] dark:to-black" id="layanan">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-black"
+          >
+            Layanan Yang Kami Sediakan Untuk Anda.
+          </h2>
+          <p class="mb-5 font-light text-black sm:text-xl dark:text-black">
+            Ini adalah beberapa layanan website yang anda bisa pesan sekarang
+          </p>
+        </div>
+        <div
+          class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
+        >
+          <!-- card 1 -->
+          <div
+            class="flex flex-col p-6 mx-auto m-50 text-center text-gray-900 bg-black rounded-lg border border-bla shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+          >
+            <h3 class="mb-4 text-2xl font-semibold">Wordpress Bundling</h3>
+            <p
+              class="text-gray-500 sm:text-lg dark:text-gray-400 text-2xl font-semibold"
+            >
+              Wordpress Website
+            </p>
+            <div class="flex justify-center items-baseline my-8">
+              <span class="mr-2 bg-white h-20 w-20 flex rounded-full"
+                ><img src="image/Wordpress_Blue_logo.png" alt=""
+              /></span>
+              <span class="text-gray-500 dark:text-gray-400"></span>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span
+                  >akses Cpanel, Mobile Friendly, Bebas Template SEO-Friendly,
+                  CMS(call massage system), Design Modern
+                </span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span
+                  >Custom payment gateway Custom fill Form Direct to
+                  whatsapp</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >cocok untuk website company,sekolah,bisnis up to 13
+                    pages</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >Bebas hosting dan domain</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold">penggunaan mudah </span></span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="text-white bg-[#FCB040] hover:bg-[#fcb140a5] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+              >Get started</a
+            >
+          </div>
+
+          <!-- card 2 -->
+
+          <div
+            class="flex flex-col p-6 mx-auto max-w-lg text-center text-[#FCB040] bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+          >
+            <h3 class="mb-4 text-2xl font-semibold">Website Bundling</h3>
+            <p
+              class="font-semibold text-gray-500 sm:text-lg dark:text-gray-400"
+            >
+              Static Website
+            </p>
+            <div class="flex justify-center items-baseline my-8">
+              <span class="mr-2 bg-inherit h-25 w-25 flex rounded-full"
+                ><img src="image/static-web.svg" alt=""
+              /></span>
+              <span class="text-gray-500 dark:text-gray-400"></span>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span
+                  >Custom Template / Design UI&UX SEO & Mobile Friendly
+                </span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  Jumlah Halaman Sesuai Request Menggunakan
+                  HTML/tailwind/css/javascript</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >Bonus Click to Whatsapp Kapasitas Lebih Rendah untuk Down
+                    Time
+                  </span></span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >Cocok untuk Konten yang Tidak Sering Berubah</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >cocok untuk profesional website company profile, personal
+                    website</span
+                  ></span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="text-white bg-[#FCB040] hover:bg-[#fcb140a5] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+              >Get started</a
+            >
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white"
+          >
+            <h3 class="mb-4 text-2xl font-semibold">Landing Page</h3>
+            <p
+              class="font-semibold text-gray-500 sm:text-lg dark:text-gray-400"
+            >
+              cocok untuk website funnel magnet,bisnis
+            </p>
+            <div class="flex justify-center items-baseline my-8">
+              <span class="mr-2 bg-white h-23 w-23 flex rounded-md"
+                ><img src="image/landing-page.svg" alt=""
+              /></span>
+              <span class="text-gray-500 dark:text-gray-400"></span>
+            </div>
+            <!-- List -->
+            <ul role="list" class="mb-8 space-y-4 text-left">
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Hosting dan domain Mobile Friendly</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Conversion-Oriented SEO-Friendly </span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >CMS (call massage system) Design Modern</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >Custom payment gateway Custom fill Form Direct to
+                    whatsapp</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <!-- Icon -->
+                <svg
+                  class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>
+                  <span class="font-semibold"
+                    >cocok untuk website company,bisnis,personal</span
+                  ></span
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="text-white bg-[#FCB040] hover:bg-[#fcb140a5] focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+              >Get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="container py-20 bg-white flex flex-col justify-center items-center"
+        id="konsultasi"
+      >
+        <h1 class="text-4xl font-medium mt-10 text-center">
+          Saatnya fokus ke Produkmu
+        </h1>
+        <h1 class="text-4xl font-medium mt-2 mb-30 text-center m-4">
+          Bisnismu biar kami yang urus!
+        </h1>
+        <p class="">
+          Silahkan order melalui link ini
+          <a href="google.com" class="bg-gray-200">order di sini</a> atau bisa
+          konsultasi terlebih dahulu.
+        </p>
+        <button
+          class="flex text-white bg-black border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg mt-10 sm:mt-10"
+        >
+          Konsultasi Via Whatsapp
+        </button>
+      </div>
+    </section>
+  </body>
+
+  <footer class="bg-[#FCB040] rounded-lg shadow m-4">
+    <div
+      class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+    >
+      <span class="text-sm text-white sm:text-center dark:text-white"
+        >© 2024
+        <a href="https://flowbite.com/" class="hover:underline">CiptaWeb™</a>.
+        All Rights Reserved.
+      </span>
+      <ul
+        class="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-white sm:mt-0"
+      >
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Konsultasi</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</html>
